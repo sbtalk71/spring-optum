@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee-records>
+	<emp>
+		<city>hyderabad</city>
+		<empId>100</empId>
+		<name>shantanu</name>
+		<salary>80000.0</salary>
+	</emp>
+	<emp>
+		<city>bangalore</city>
+		<empId>101</empId>
+		<name>amith</name>
+		<salary>70000.0</salary>
+	</emp>
+	<emp>
+		<city>chennai</city>
+		<empId>102</empId>
+		<name>kiran</name>
+		<salary>70000.0</salary>
+	</emp>
+	<emp>
+		<city>noida</city>
+		<empId>103</empId>
+		<name>lokesh</name>
+		<salary>60000.0</salary>
+	</emp>
+</employee-records>
