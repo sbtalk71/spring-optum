@@ -105,8 +105,17 @@ public class AppConfig {
 
 	@Bean
 	public Step step1() {
-		return steps.get("step1").<Emp, Emp>chunk(5).reader(itemReader()).processor(itemProcessor())
-				.writer(itemWriter()).build();
+		return steps.get("step1")
+				.<Emp, Emp>chunk(5)
+				.reader(itemReader())
+				.processor(itemProcessor())
+				.writer(itemWriter())
+				.faultTolerant()
+				//.retryLimit(5)
+				//.retry(Exception.class)
+				.skipLimit(1)
+				.skip(Exception.class)
+				.build();
 	}
 
 	@Bean
