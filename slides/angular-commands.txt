@@ -1,0 +1,17 @@
+Angular Commands
+ng new <app-name>
+ng generate(g) component|class|service|interface|module| <name> options
+ng serve (starts dev server)
+
+install express server
+create a folder
+cd into the folder
+node init --yes
+npm install --save express body-parser cors
+
+
+Create a single workspace with multiple projects
+ng new my-workspace --createApplication=false
+cd my-workspace
+ng generate application my-app1
+cd to my-app and start working
